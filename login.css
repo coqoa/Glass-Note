@@ -1,0 +1,245 @@
+body {
+  /* background-image: url("/backgroundImage/9.jpg");
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-position-y: 0%;
+  background-size: 1000px, 2000px;
+  min-width: 100%;
+  min-height: 100%; */
+
+  background: url("/backgroundImage/9.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*-------------------------옵션버튼(공통사항)--------------------------*/
+#option-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 25px;
+  color: white;
+  border: 0;
+  background-color: transparent;
+}
+.option-modal {
+  opacity: 0.1;
+}
+#option-modal {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  width: 200px;
+  /* width: 100px; : 중앙선 */
+  height: 280px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  /*(모바일에서 로그인폼과 겹칠때만) 모달창 열리면 section에 opacity:0.2 하는식으로해서 계층디자인 완성하기*/
+}
+#user-name {
+  position: relative;
+  top: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+#app-font-color {
+}
+#app-font-black,
+#app-font-white {
+  position: absolute;
+  top: 113px;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+}
+#app-font-white {
+  right: 130px;
+  background-color: white;
+}
+#app-font-black {
+  right: 81px;
+  background-color: black;
+}
+#app-font-black:hover,
+#app-font-white:hover {
+  cursor: pointer;
+  border: 1px solid lightgray;
+}
+
+#background-image {
+  position: absolute;
+  top: 170px;
+  right: 102px;
+  color: #ffffff;
+  opacity: 0.7;
+  font-size: 40px;
+}
+#background-image:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+#login,
+#logout {
+  position: absolute;
+  top: 230px;
+  right: 46px;
+  width: 150px;
+  height: 30px;
+  border: 0;
+  border-radius: 10px;
+}
+#login:hover,
+#logout:hover {
+  cursor: pointer;
+}
+/* #logout {
+  display: none;
+} */
+#contact-me {
+  position: absolute;
+  top: 280px;
+  right: 57px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+#contact-me-title {
+  margin-bottom: 3px;
+  color: white;
+  opacity: 0.7;
+}
+.contact-me-element {
+  position: relative;
+  right: 5px;
+  font-size: 20px;
+  color: white;
+  opacity: 0.7;
+  background-color: transparent;
+  border: 0;
+}
+.contact-me-element:hover {
+  cursor: pointer;
+}
+#my-blog:hover,
+#my-github:hover,
+#my-email:hover {
+  opacity: 1;
+}
+#background-image-modal {
+  /* 모달창 열리면 option-modal의 opacity를 0.1로 바꾸기 */
+  /* display: none; */
+  position: absolute;
+  top: 220px;
+  right: 30px;
+  width: 264px;
+  height: 340px;
+  border: 1px solid pink;
+  border-radius: 3px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 100;
+}
+.background-image-button {
+  padding: 0px;
+  border: 0;
+  margin: 5px;
+  width: 75px;
+  height: 75px;
+  background-color: white;
+  border-radius: 10px;
+}
+.background-image-button:hover {
+  opacity: 0.5;
+}
+/*-------------------------컨텐트영역-------------------------*/
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 1;
+  opacity: 0.1;
+}
+#title {
+  font-size: 35px;
+  color: white; /*-------------------------버튼으로 컬러 변경해야함--------------------------*/
+  text-align: center;
+}
+
+form {
+  position: relative;
+  top: -20px;
+}
+input {
+  position: relative;
+  top: 10px;
+  left: -2px;
+  width: 180px;
+  margin: 15px 10px 15px 10px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border: 0;
+  border-bottom: 1px solid rgb(168, 166, 166);
+  /* text-align: center; */
+  color: white;
+  background-color: transparent;
+}
+.section-button {
+  position: relative;
+  top: 20px;
+  margin: 3px;
+  border: 0;
+  color: white;
+  background-color: transparent;
+}
+#login-submit {
+  width: 185px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 2px;
+  color: black;
+  background-color: white;
+}
+#login-submit:hover {
+  cursor: pointer;
+}
+#login-home {
+  opacity: 0.6;
+  width: 55px;
+}
+#login-home:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+#login-signup {
+  opacity: 0.6;
+  width: 50px;
+  /*-------------------------버튼으로 컬러 변경해야함--------------------------*/
+}
+#login-signup:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+#what-is-glass-note {
+  opacity: 0.6;
+  left: 3px;
+}
+#what-is-glass-note:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+/* 1. 디자인완성, 자바스크립트완성, 그다음페이지 */
+/* 배경화면 고민해보기 비율 유지하면서 크기조절하는방법? */
