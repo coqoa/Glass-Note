@@ -5,54 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlassNote</title>
+    <link rel="stylesheet" href="/login.css" />
+    <script src="https://kit.fontawesome.com/65f55f4509.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="signup-body">
     <header>
-        <div id="option">
-            <div id="option-modal">
-                <h1 id="user-name"></h1>
-                <div id="app-font-color">
-                    <span id="app-font-white"></span>
-                    <span id="app-font-black"></span>
-                </div><!--이름지어야함-->
-                <div id="background-image">
-                    <div id="background-image-modal">
-                        <span id="image1"></span> <!--inline-block-->
-                        <span id="image2"></span>
-                        <span id="image3"></span>
-                        <span id="image4"></span>
-                        <span id="image5"></span>
-                        <span id="image6"></span>
-                        <span id="image7"></span>
-                        <span id="image8"></span>
-                        <span id="image9"></span>
-                        <span id="image10"></span>
-                        <span id="image11"></span>
-                        <span id="image12"></span>
-                    </div>
+        <button id="option-button"><i class="fas fa-cog"></i>
+            <div class="option-modal" id="option-modal">
+                <div class="option-modal"  id="user-name">
+                    user-name
                 </div>
-                <div id="logout"></div>
-                <div id="contact-me">
-                    <span id="my-blog"></span>
-                    <span id="my-github"></span>
-                    <span id="my-email"></span>
+                <div class="option-modal"  id="app-font-color">
+                    <button class="option-modal" id="app-font-white"></button>
+                    <button class="option-modal" id="app-font-black"></button>
+                </div><!--이름지어야함-->
+                <div class="option-modal"  id="background-image">
+                    <i class="fas fa-image"></i>
+                </div>
+                
+                <button class="option-modal" id="login">login</button>
+                <button class="option-modal" id="logout">logout</button>
+                <div class="option-modal"  id="contact-me">
+                    <div id="contact-me-title">contact-developer</div>
+                        <button class="contact-me-element" id="my-blog"><i class="fas fa-bold"></i></button>
+                        <button class="contact-me-element"  id="my-github"><i class="fab fa-github"></i></button>
+                        <button class="contact-me-element"  id="my-email"><i class="far fa-envelope"></i></button>
+                    
                 </div>
             </div>
-        </div>
+            <div id="background-image-modal">
+                <button class="background-image-button" id="image1"><img src="/backgroundImage/1.jpg" width="75" height="75"></button>
+                <button class="background-image-button" id="image2"><img src="/backgroundImage/2.jpg" width="75" height="75"></button>
+                <button class="background-image-button" id="image3"><img src="/backgroundImage/3.jpg" width="75" height="75"></button>
+                <button class="background-image-button" id="image4"><img src="/backgroundImage/4.jpg" width="75" height="75"></button>
+                <button class="background-image-button" id="image5"><img src="/backgroundImage/5.jpg" width="75" height="75"></button>
+                <button class="background-image-button" id="image6"><img src="/backgroundImage/6.jpg" width="75" height="75"></button>
+                <button class="background-image-button" id="image7"><img src="/backgroundImage/7.jpg" width="75" height="75"></button>
+                <button class="background-image-button" id="image8"><img src="/backgroundImage/8.jpg" width="75" height="75"></button>
+                <button class="background-image-button" id="image9"><img src="/backgroundImage/9.jpg" width="75" height="75"></button>
+                <button class="background-image-button" id="image10"><img src="/backgroundImage/10.jpg" width="75" height="75"></button>
+                <button class="background-image-button" id="image11"><img src="/backgroundImage/11.jpg" width="75" height="75"></button>
+                <button class="background-image-button" id="image12"><img src="/backgroundImage/12.jpg" width="75" height="75"></button>
+            </div>
+        </button>
     </header>
 
-    <section><!--big-size-->
-        <h1 id="signup-title"></h1>
-        <form action="">
-            <input type="email" id="signup-email">
-            <input type="password" id="signup-password">
-            <input type="password" id="signup-confirm-password">
-            <input type="text" id="signup-nickname">
-            <input type="text" id="signup-phone-number">
-            <input type="text" id="signup-birthday">
-            <input type="submit" id="signup-submit">
-            <div id="or-signup-with"></div>
-            <button type="button" id="google-API"></button>
+    <section class="section" id="signup-section"><!--big-size-->
+        <h1 class="title" id="signup-title">Sign up</h1>
+        <form class="signup-form" action="">
+            <input type="text" class="form-input" id="signup-id" placeholder="ID">
+            <input type="password" class="form-input" id="signup-password" placeholder="Password">
+            <input type="password" class="form-input" id="signup-password-check" placeholder="Password-repeat">
+            <input type="email" class="form-input" id="signup-email" placeholder="email">
+            <input type="text" class="form-input" id="signup-phone-number" placeholder="number">
+            <input type="text" class="form-input" id="signup-birthday" placeholder="birthday">
+            <div>
+                <button type="button" class="form-button" id="signup-submit">Sign up</button>
+                <button type="button" class="form-button" id="signup-home"> home</button>
+                <button type="button" class="form-button" id="signup-login"> login</button>
+            </div>
         </form>
     </section>    
     <footer>

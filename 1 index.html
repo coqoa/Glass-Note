@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="/login.css" />
     <script src="https://kit.fontawesome.com/65f55f4509.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="login-body">
     <header>
-        <button id="option-button"><i class="fas fa-cog"></i>
+        <!-- <button id="option-button"><i class="fas fa-cog"></i> -->
+        <button id="option-button"><i class="fas fa-bars"></i>
             <div class="option-modal" id="option-modal">
                 <div class="option-modal"  id="user-name">
                     user-name
@@ -51,17 +52,15 @@
         </button>
     </header>
 
-    <section><!--small-size-->
-        
-        <h1 class="title" id="title">Glass Note</h1>
-        <div class="title" id="underline"></div>
-        <form action="">
-            <input type="email" id="login-id" placeholder="id">
-            <input type="password" id="login-password" placeholder="password">
-            <button type="submit" class="section-button" id="login-submit"> log in</button><br>
-            <button type="button" class="section-button" id="login-home"> home</button>
-            <button type="button" class="section-button" id="login-signup"> signup</button>
-            <button type="button" class="section-button" id="what-is-glass-note"> What is Glass Note ?</button>
+    <section class="section" id="login-section"><!--small-size-->
+        <h1 class="title" id="login-title">Glass Note</h1>
+        <form class="form" action="">
+            <input type="email" class="form-input" id="login-id" placeholder="ID">
+            <input type="password" class="form-input" id="login-password" placeholder="Password">
+            <button type="submit" class="form-button" id="login-submit"> log in</button><br>
+            <button type="button" class="form-button" id="login-home"> home</button>
+            <button type="button" class="form-button" id="login-signup"> signup</button>
+            <button type="button" class="form-button" id="what-is-glass-note"> What is Glass Note ?</button>
         </form>
 
     </section>
