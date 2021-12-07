@@ -39,14 +39,13 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-
-  /* background: url("/backgroundImage/9.jpg") no-repeat center center fixed; */
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 }
-/*-------------------------옵션버튼(공통사항)--------------------------*/
+/* ⬆------------------------------ 페이지공통사항 ---------------------------------*/
+/* ⬇︎-------------------------header.css (옵션버튼구현코드)--------------------------*/
 #option-button {
   position: absolute;
   top: 20px;
@@ -128,8 +127,8 @@ body {
   cursor: pointer;
 }
 /* #logout {
-  display: none;
-} */
+    display: none;
+  } */
 #contact-me {
   position: absolute;
   top: 280px;
@@ -200,15 +199,6 @@ body {
   opacity: 1;
 }
 .title {
-  /* font-family: "Permanent Marker", cursive; */
-  /* font-family: "Caveat Brush", cursive; */
-  /* font-family: "Bangers", cursive; */
-  /* font-family: "Marck Script", cursive; */
-  /* font-family: "Oleo Script", cursive; */
-  /* font-family: "Italianno", cursive; */
-  /* font-family: 'Lobster', cursive; */
-  /* font-family: "Courgette", cursive; */
-  /* font-family: "Playball", cursive; */
   font-family: "Kaushan Script", cursive;
 
   font-size: 35px;
@@ -252,10 +242,10 @@ form {
   color: black;
   background-color: white;
   cursor: pointer;
-  /* font-family: "Kaushan Script", cursive; */
 }
-/*-------------------------⬇︎ login-컨텐트영역-------------------------*/
 
+/* ⬆︎-------------------------header.css (옵션버튼 구현코드)--------------------------*/
+/* ⬇︎------------------------------ login-컨텐트영역 -------------------------------*/
 #login-section {
   width: 200px;
   height: 300px;
@@ -267,10 +257,6 @@ form {
 }
 /* .form-button : login과 signup의 버튼을 form-button클래스로 통합 */
 
-#login-submit {
-  /* font-family: "Kaushan Script", cursive; */
-  /* login-submit,signup-submit 통합  */
-}
 #login-home,
 #login-signup {
   opacity: 0.6;
@@ -288,7 +274,7 @@ form {
   cursor: pointer;
 }
 
-/*-------------------------⬇︎ SIGN UP-컨텐트영역-------------------------*/
+/* ⬇︎ ---------------------------- SIGN UP-컨텐트영역 ------------------------------*/
 
 #signup-section {
   width: 250px;
@@ -308,7 +294,6 @@ form {
 
 #signup-submit {
   /* login-submit,signup-submit 통합  */
-  /* font-family: "Kaushan Script", cursive; */
   margin-top: 0px;
 }
 #signup-home,

@@ -5,61 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlassNote</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://kit.fontawesome.com/65f55f4509.js" crossorigin="anonymous"></script>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script defer src="main.js"></script>
 </head>
-<body>
+<body class="list-body">
     <header>
-        <div id="option">
-            <div id="option-modal">
-                <h1 id="user-name"></h1>
-                <div id="app-font-color">
-                    <span id="app-font-white"></span>
-                    <span id="app-font-black"></span>
-                </div><!--이름지어야함-->
-                <div id="background-image">
-                    <div id="background-image-modal">
-                        <span id="image1"></span> <!--inline-block-->
-                        <span id="image2"></span>
-                        <span id="image3"></span>
-                        <span id="image4"></span>
-                        <span id="image5"></span>
-                        <span id="image6"></span>
-                        <span id="image7"></span>
-                        <span id="image8"></span>
-                        <span id="image9"></span>
-                        <span id="image10"></span>
-                        <span id="image11"></span>
-                        <span id="image12"></span>
-                    </div>
-                </div>
-                <div id="logout"></div>
-                <div id="contact-me">
-                    <span id="my-blog"></span>
-                    <span id="my-github"></span>
-                    <span id="my-email"></span>
-                </div>
-            </div>
-        </div>
+       <!-- include header.html -->
+       <div id="includeHeader"></div>
     </header>
 
+<!-- 각 html파일의 body크기조절 (모바일상황에선 키보드레이아웃이 올라오는것까지 생각해야함) -->
+
     <section><!--big-size-->
-        <div>
-            <span id="category-title"></span>
-            <span id="button-category-list">
-                <div id="category-list-modal">
-                    <div id="add-category">
-                        <span id="add-category-text"></span>
-                        <span id="add-button-category"></span>
+        <article>
+            <div>
+                <span id="category-title"></span>
+                <span id="button-category-list">
+                    <div id="category-list-modal">
+                        <div id="add-category">
+                            <span id="add-category-text"></span>
+                            <span id="add-button-category"></span>
+                        </div>
+                        <div id="category-list"></div>
                     </div>
-                    <div id="category-list"></div>
-                </div>
-            </span>
-            
-        </div>
-        <div id="add-list"> <!--add-list : 애매한거같음-->
-            <span id="add-list-text"></span>
-            <span id="add-button-list"></span>
-        </div>
-        <div id="video-list"></div>
+                </span>
+                
+            </div>
+            <div id="add-list"> <!--add-list : 애매한거같음-->
+                <span id="add-list-text"></span>
+                <span id="add-button-list"></span>
+            </div>
+            <div id="video-list"></div>
+        </article>
+    
+        <!-- 각 리스트에 대한 내용은 모달창으로 생성 (=리스트를 생성할때마다 모달창도 각각만들고 display는 none으로 지정, 리스트를 누르면 display를 변경해서 보이도록)-->
+        <article><!--big-size-->
+            <div id="video-area">
+                <span id="please-input-URL-Address"></span>
+                <span id="add-button-video">
+                    <div id="add-video-modal">
+                        <span id="add-URL-text"></span>
+                        <span id="input-button-video"></span>
+                    </div>
+                </span>
+            </div>
+            <div id="note-area">
+                <span id="button-note-editor">
+                    <div id="note-editor-modal">
+                        <span id="button-bold"></span>
+                        <span id="button-italic"></span>
+                        <span id="button-color"><!--모달--></span>
+                        <span id="button-underline"></span>
+                        <span id="button-strikethrough"></span>
+                        <span id="font-size"><!--모달--></span>
+                        <span id="up-font-size"></span>
+                        <span id="down-font-size"></span>
+                    </div>
+                </span>
+                <span id="note"></span>
+            </div>
+        </article>
     </section>
     <footer>
         
