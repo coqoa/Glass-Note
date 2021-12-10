@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+(내용페이지)
+리스트상단영역
+ 리스트제목
+ 리스트 삭제버튼
+ 비디오 수정버튼
+ 저장버튼
+비디오영역
+비디오인풋버튼
+ 비디오인풋모달
+  비디오인풋텍스트
+  비디오인풋버튼
+
+텍스트영역
+ 노트에디터영역
+  볼드버튼
+  이탤릭버튼
+  컬러변경버튼
+  언더라인버튼
+  취소선버튼
+  폰트사이즈드롭리스트
+노트본문
+
+<!-- 게시판 만들기 형식으로 하면 될듯 -->
+
+<!-- 각 html파일의 body크기조절 (모바일상황에선 키보드레이아웃이 올라오는것까지 생각해야함) -->
+
+    <section><!--big-size-->
+        <article class="video-content">
+            <div>
+                <span id="category-title"></span>
+                <button type="button" id="button-category-list">
+                <div id="category-list-modal">
+                    <form method="" id="add-category">
+                        <input type="text" id="add-category-text"></input>
+                        <button type="button" id="add-button-category"></button>
+                    </form>
+                    <div id="category-list"></div>
+                </div>
+                </button>
+                
+            </div>
+            <div id="add-list"> <!--add-list : 애매한거같음-->
+                <span id="add-list-text">애드리스트텍스트</span>
+                <span id="add-list-button">애드리스트버튼</span>
+            </div>
+            <div id="video-list">
+                비디오리스트
+            </div>
+        </article>
+    
+        <!-- 각 리스트에 대한 내용은 모달창으로 생성 (=리스트를 생성할때마다 모달창도 각각만들고 display는 none으로 지정, 리스트를 누르면 display를 변경해서 보이도록)-->
+        <article class="note-content"><!--big-size-->
+            <div id="video-area">
+                <span id="please-input-URL-Address"></span>
+                <span id="add-button-video">
+                    <div id="add-video-modal">
+                        <span id="add-URL-text"></span>
+                        <span id="input-button-video"></span>
+                    </div>
+                </span>
+            </div>
+            <div id="note-area">
+                <div id="note-editor-modal">
+                    <span id="button-bold"></span>
+                    <span id="button-italic"></span>
+                    <span id="button-color"><!--모달--></span>
+                    <span id="button-underline"></span>
+                    <span id="button-strikethrough"></span>
+                    <span id="font-size"><!--모달--></span>
+                    <span id="up-font-size"></span>
+                    <span id="down-font-size"></span>
+                </div>
+                <span id="note">
+                    노트
+                </span>
+            </div>
+        </article>
+    </section>
+</body>
+</html>

@@ -5,50 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>header</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/public/header.css" />
     <script src="https://kit.fontawesome.com/65f55f4509.js" crossorigin="anonymous"></script>
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script defer src="main.js"></script>
+    <script defer src="/public/header.js"></script>
 </head>
 <body>
     <!-- <header></header> -->
-    <button id="option-button"><i class="fas fa-bars"></i>
-        <div class="option-modal" id="option-modal">
-            <div class="option-modal"  id="user-name">
+    <button class="option-button"><i class="fas fa-bars"></i>
+        <div class="option-modal-window" id="option-modal">
+            <div class="option-modal user-name" >
                 user-name
             </div>
-            <div class="option-modal"  id="app-font-color">
-                <button class="option-modal" id="app-font-white"></button>
-                <button class="option-modal" id="app-font-black"></button>
-            </div><!--이름지어야함-->
-            <div class="option-modal"  id="background-image">
-                <i class="fas fa-image"></i>
-            </div>
+            <form class="option-modal app-font-color" >
+                <button class="option-modal app-font-white"></button>
+                <button class="option-modal app-font-black"></button>
+            </form><!--이름지어야함-->
+            <div class="option-modal background-image" ><i class="fas fa-image"></i></div>
             
-            <button class="option-modal" id="login">login</button>
-            <button class="option-modal" id="logout">logout</button>
-            <div class="option-modal"  id="contact-me">
-                <div id="contact-me-title">contact-developer</div>
-                    <button class="contact-me-element" id="my-blog"><i class="fas fa-bold"></i></button>
-                    <button class="contact-me-element"  id="my-github"><i class="fab fa-github"></i></button>
-                    <button class="contact-me-element"  id="my-email"><i class="far fa-envelope"></i></button>
-                
+            <button class="option-modal login">login</button>
+            <button class="option-modal logout">logout</button>
+            <div class="option-modal contact-me" >
+                <div class="contact-me-title">contact-developer</div>
+                <button class="contact-me-element my-blog "><i class="fas fa-bold"></i></button>
+                <button class="contact-me-element my-github" ><i class="fab fa-github"></i></button>
+                <button class="contact-me-element my-email" ><i class="far fa-envelope"></i></button>
             </div>
         </div>
-        <div id="background-image-modal">
-            <button class="background-image-button" id="image1"><img src="/backgroundImage/1.jpg" width="75" height="75"></button>
-            <button class="background-image-button" id="image2"><img src="/backgroundImage/2.jpg" width="75" height="75"></button>
-            <button class="background-image-button" id="image3"><img src="/backgroundImage/3.jpg" width="75" height="75"></button>
-            <button class="background-image-button" id="image4"><img src="/backgroundImage/4.jpg" width="75" height="75"></button>
-            <button class="background-image-button" id="image5"><img src="/backgroundImage/5.jpg" width="75" height="75"></button>
-            <button class="background-image-button" id="image6"><img src="/backgroundImage/6.jpg" width="75" height="75"></button>
-            <button class="background-image-button" id="image7"><img src="/backgroundImage/7.jpg" width="75" height="75"></button>
-            <button class="background-image-button" id="image8"><img src="/backgroundImage/8.jpg" width="75" height="75"></button>
-            <button class="background-image-button" id="image9"><img src="/backgroundImage/9.jpg" width="75" height="75"></button>
-            <button class="background-image-button" id="image10"><img src="/backgroundImage/10.jpg" width="75" height="75"></button>
-            <button class="background-image-button" id="image11"><img src="/backgroundImage/11.jpg" width="75" height="75"></button>
-            <button class="background-image-button" id="image12"><img src="/backgroundImage/12.jpg" width="75" height="75"></button>
-        </div>
+        <form class="background-image-modal">
+            <button class="background-image-button image1"><img src="/backgroundImage/1.jpg" width="75" height="75"></button>
+            <button class="background-image-button image2"><img src="/backgroundImage/2.jpg" width="75" height="75"></button>
+            <button class="background-image-button image3"><img src="/backgroundImage/3.jpg" width="75" height="75"></button>
+            <button class="background-image-button image4"><img src="/backgroundImage/4.jpg" width="75" height="75"></button>
+            <button class="background-image-button image5"><img src="/backgroundImage/5.jpg" width="75" height="75"></button>
+            <button class="background-image-button image6"><img src="/backgroundImage/6.jpg" width="75" height="75"></button>
+            <button class="background-image-button image7"><img src="/backgroundImage/7.jpg" width="75" height="75"></button>
+            <button class="background-image-button image8"><img src="/backgroundImage/8.jpg" width="75" height="75"></button>
+            <button class="background-image-button image9"><img src="/backgroundImage/9.jpg" width="75" height="75"></button>
+            <button class="background-image-button image10"><img src="/backgroundImage/10.jpg" width="75" height="75"></button>
+            <button class="background-image-button image11"><img src="/backgroundImage/11.jpg" width="75" height="75"></button>
+            <button class="background-image-button image12"><img src="/backgroundImage/12.jpg" width="75" height="75"></button>
+        </form>
     </button>
 </body>
 </html>
+
+<!-- 글래스노트 피드백 : 버튼태그빼기, id빼기, 제이쿼리걷어내기,html구조다시짜기,
+포모투두대비 신경써서 구현한 부분 그때그때 작성해놓기(문서로서의 구조를 더 신경썻다, 각 태그의 사용법에 더 신경썼다(버튼태그는 폼안에 넣어야된다든가 a태그로 단순 하이퍼링크를 구현했다 등등)
++ html에서는 id를 사용하지않고 class로만 사용하기 -->

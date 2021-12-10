@@ -26,14 +26,14 @@
 button,
 input,
 div,
-span {
+span,
+a {
   /* -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; */
   font-family: "Source Sans Pro", sans-serif;
   font-style: italic;
 }
-
 body {
   background-image: url("/backgroundImage/1.jpg");
   background-repeat: no-repeat;
@@ -43,148 +43,6 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-}
-/* ⬆------------------------------ 페이지공통사항 ---------------------------------*/
-/* ⬇︎-------------------------header.css (옵션버튼구현코드)--------------------------*/
-#option-button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 21px;
-  color: gray;
-  border: 0;
-  background-color: transparent;
-}
-
-#option-modal {
-  position: absolute;
-  top: 30px;
-  right: 0px;
-  width: 200px;
-  /* width: 100px; : 중앙선 */
-  height: 280px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.4);
-  color: white;
-  /*(모바일에서 로그인폼과 겹칠때만) 모달창 열리면 section에 opacity:0.2 하는식으로해서 계층디자인 완성하기*/
-}
-#user-name {
-  position: relative;
-  top: 10px;
-  text-align: center;
-  font-size: 25px;
-}
-#app-font-color {
-}
-#app-font-black,
-#app-font-white {
-  position: absolute;
-  top: 113px;
-  width: 30px;
-  height: 30px;
-  border: 0;
-  border-radius: 5px;
-}
-#app-font-white {
-  right: 130px;
-  background-color: white;
-}
-#app-font-black {
-  right: 81px;
-  background-color: black;
-}
-#app-font-black:hover,
-#app-font-white:hover {
-  cursor: pointer;
-  border: 1px solid lightgray;
-}
-
-#background-image {
-  position: absolute;
-  top: 170px;
-  right: 102px;
-  color: #ffffff;
-  opacity: 0.7;
-  font-size: 40px;
-}
-#background-image:hover {
-  cursor: pointer;
-  opacity: 1;
-}
-#login,
-#logout {
-  position: absolute;
-  top: 230px;
-  right: 46px;
-  width: 150px;
-  height: 30px;
-  border: 0;
-  border-radius: 10px;
-}
-#login:hover,
-#logout:hover {
-  cursor: pointer;
-}
-/* #logout {
-    display: none;
-  } */
-#contact-me {
-  position: absolute;
-  top: 280px;
-  right: 57px;
-  color: white;
-  font-size: 15px;
-  text-align: center;
-}
-#contact-me-title {
-  margin-bottom: 3px;
-  color: white;
-  opacity: 0.7;
-}
-.contact-me-element {
-  position: relative;
-  right: 5px;
-  font-size: 20px;
-  color: white;
-  opacity: 0.7;
-  background-color: transparent;
-  border: 0;
-}
-.contact-me-element:hover {
-  cursor: pointer;
-}
-#my-blog:hover,
-#my-github:hover,
-#my-email:hover {
-  opacity: 1;
-}
-#background-image-modal {
-  /* display: none; */
-  position: absolute;
-  top: 220px;
-  right: 30px;
-  width: 264px;
-  height: 340px;
-  border: 1px solid pink;
-  border-radius: 3px;
-  padding: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 7px;
-  background-color: rgba(255, 255, 255, 0.5);
-  z-index: 100;
-}
-.background-image-button {
-  padding: 0px;
-  border: 0;
-  margin: 5px;
-  width: 75px;
-  height: 75px;
-  background-color: white;
-  border-radius: 10px;
-}
-.background-image-button:hover {
-  opacity: 0.5;
 }
 .section {
   position: absolute;
@@ -233,8 +91,8 @@ form {
   color: white;
   background-color: transparent;
 }
-#login-submit,
-#signup-submit {
+.login-submit,
+.signup-submit {
   width: 185px;
   height: 30px;
   margin-top: 10px;
@@ -243,79 +101,106 @@ form {
   background-color: white;
   cursor: pointer;
 }
-
+/* ⬆------------------------------ 페이지공통사항 ---------------------------------*/
+/* ⬇︎-------------------------header.css (옵션버튼구현코드)--------------------------*/
 /* ⬆︎-------------------------header.css (옵션버튼 구현코드)--------------------------*/
 /* ⬇︎------------------------------ login-컨텐트영역 -------------------------------*/
-#login-section {
+a {
+  text-decoration-line: none;
+}
+.login-section {
   width: 200px;
   height: 300px;
 }
 
-#login-id {
+.login-id {
   /* login과 signup의 인풋을 클래스로 묶어서 위에 공통태그로 구현 */
   margin-bottom: 30px;
 }
 /* .form-button : login과 signup의 버튼을 form-button클래스로 통합 */
-
-#login-home,
-#login-signup {
+.login-home,
+.login-signup {
   opacity: 0.6;
   width: 55px;
-  cursor: pointer;
 }
-#login-home:hover,
-#login-signup:hover,
-#what-is-glass-note:hover {
+
+.login-home {
+  position: absolute;
+  top: 260px;
+  left: 40px;
+}
+.login-signup {
+  position: absolute;
+  top: 260px;
+  left: 110px;
+}
+.what-is-glass-note {
+  position: absolute;
+  top: 285px;
+  left: 42px;
+  opacity: 0.6;
+}
+.login-home:hover,
+.login-signup:hover,
+.what-is-glass-note:hover {
   opacity: 1;
 }
-#what-is-glass-note {
-  opacity: 0.6;
-  left: 3px;
-  cursor: pointer;
-}
-
+/* ⬆︎------------------------------ login-컨텐트영역 -------------------------------*/
 /* ⬇︎ ---------------------------- SIGN UP-컨텐트영역 ------------------------------*/
 
-#signup-section {
+.signup-section {
   width: 250px;
   height: 450px;
 }
 /* .signup-form  : .login-form과 통합 */
-#signup-id,
-#signup-password,
-#signup-password-check,
-#signup-email,
-#signup-phone-number,
-#signup-birthday {
+.signup-id,
+.signup-password,
+.signup-password-check,
+.signup-email,
+.signup-phone-number,
+.signup-birthday {
   font-size: 14px;
   margin-bottom: 20px;
 }
 /* .form-button : login과 signup의 버튼을 form-button클래스로 통합 */
 
-#signup-submit {
+.signup-submit {
+  position: absolute;
+  top: 280px;
+  left: 30px;
   /* login-submit,signup-submit 통합  */
   margin-top: 0px;
 }
-#signup-home,
-#signup-login {
+.signup-home,
+.signup-login {
   opacity: 0.6;
   width: 55px;
-  cursor: pointer;
 }
-#signup-home:hover,
-#signup-login:hover {
+.signup-home {
+  position: absolute;
+  top: 420px;
+  left: 70px;
+}
+.signup-login {
+  position: absolute;
+  top: 420px;
+  left: 140px;
+}
+.signup-home:hover,
+.signup-login:hover {
   opacity: 1;
 }
-
 /* opacity변경부분 */
 .section {
   /* opacity: 0.1; */
 }
+.option-modal-window,
 .option-modal {
-  opacity: 0.1;
+  /* .fa-image { */
+  opacity: 1;
 }
-#background-image-modal {
-  opacity: 0.1;
+.background-image-modal {
+  opacity: 0;
 }
 /* 흰검변경텍스트 */
 
@@ -324,3 +209,106 @@ form {
 /* 2. 흰색/ 검정색으로 변경해야되는 부분, 찾아서 정리하기 (각html별로 조사)  */
 /* 3. [완료]모달창열리면 opacity값 조절하는 조건생각해보기 (모바일상태일때만 조절하기, 조절해야하는값들은 뭐뭐있음?) */
 /* 4. 어울리는 폰트 정하기 */
+/* ⬆︎----------------------------- SIGN UP-컨텐트영역 -----------------------------*/
+/* ⬇︎---------------------------------- 리스트 -----------------------------------*/
+ul {
+  list-style: none;
+}
+.list-section {
+  width: 250px;
+  height: 450px;
+}
+section.category {
+  text-align: left;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid rgba(255, 0, 0, 0.164);
+}
+.category-title {
+  height: 150px;
+}
+.category-dropdown {
+}
+.category-modal-section {
+  display: none;
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+  border: 1px solid black;
+}
+.category-add-section {
+  position: relative;
+
+  border: 1px solid gray;
+}
+
+.category-content-section {
+  position: relative;
+
+  border: 1px solid gray;
+}
+
+.content-section {
+  position: absolute;
+  top: 60px;
+  width: 250px;
+  height: 380px;
+
+  border: 1px solid rgba(0, 128, 0, 0.185);
+}
+.content-add-section {
+  position: relative;
+  border: 0;
+  height: 30px;
+  line-height: 30px;
+  /* background-color: transparent; */
+}
+.list-ul-section {
+  position: relative;
+  padding: 0;
+  /* border: 1px solid gray; */
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff50;
+  border: 1px solid #ffffff80;
+  border-radius: 5px;
+}
+.list-sortable-button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.list-title {
+  width: 200px;
+}
+.list-delete-button {
+  position: relative;
+  left: 0px;
+  background-color: transparent;
+  border: 0;
+  color: lightgray;
+  cursor: pointer;
+}
+
+input.list-input-text {
+  width: 220px;
+  border: 0;
+  border-bottom: 1px solid lightgray;
+  background-color: transparent;
+}
+button.list-add-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 15px;
+  background-color: transparent;
+  border: 0;
+  color: lightgray;
+}
+/* ⬆︎---------------------------------- 리스트 -----------------------------------*/

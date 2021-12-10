@@ -1,0 +1,135 @@
+.option-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 21px;
+  color: gray;
+  border: 0;
+  background-color: transparent;
+}
+
+.option-modal-window {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  width: 200px;
+  height: 280px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+}
+.user-name {
+  position: relative;
+  top: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+.app-font-color {
+}
+.app-font-black,
+.app-font-white {
+  position: absolute;
+  top: 113px;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+}
+.app-font-white {
+  right: 130px;
+  background-color: white;
+}
+.app-font-black {
+  right: 81px;
+  background-color: black;
+}
+.app-font-black:hover,
+.app-font-white:hover {
+  cursor: pointer;
+  border: 1px solid lightgray;
+}
+
+.background-image {
+  position: absolute;
+  top: 170px;
+  right: 102px;
+  color: #ffffff;
+  opacity: 0.7;
+  font-size: 40px;
+}
+.background-image:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.login,
+.logout {
+  position: absolute;
+  top: 230px;
+  right: 46px;
+  width: 150px;
+  height: 30px;
+  border: 0;
+  border-radius: 10px;
+}
+.login:hover,
+.logout:hover {
+  cursor: pointer;
+}
+.contact-me {
+  position: absolute;
+  top: 280px;
+  right: 57px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+.contact-me-title {
+  margin-bottom: 3px;
+  color: white;
+  opacity: 0.7;
+}
+.contact-me-element {
+  position: relative;
+  right: 5px;
+  font-size: 20px;
+  color: white;
+  opacity: 0.7;
+  background-color: transparent;
+  border: 0;
+}
+.contact-me-element:hover {
+  cursor: pointer;
+}
+.my-blog:hover,
+.my-github:hover,
+.my-email:hover {
+  opacity: 1;
+}
+.background-image-modal {
+  position: absolute;
+  top: 220px;
+  right: 30px;
+  width: 264px;
+  height: 340px;
+  border: 1px solid pink;
+  border-radius: 3px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 100;
+}
+.background-image-button {
+  padding: 0px;
+  border: 0;
+  margin: 5px;
+  width: 75px;
+  height: 75px;
+  background-color: white;
+  border-radius: 10px;
+}
+.background-image-button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}

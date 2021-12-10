@@ -5,71 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlassNote</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/public/style.css" />
     <script src="https://kit.fontawesome.com/65f55f4509.js" crossorigin="anonymous"></script>
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script defer src="main.js"></script>
+    <script defer src="/public/main.js"></script>
 </head>
 <body class="list-body">
     <header>
        <!-- include header.html -->
        <div id="includeHeader"></div>
     </header>
+    <!-- 전체레이아웃 list-layout
+        카테고리 category
+            카테고리타이틀영역 category-title-section
+                카테고리타이틀 category-title
+                카테고리드롭다운 category-dropdown
+            카테고리모달영역 category-modal-section
+                카테고리추가영역 category-add-section
+                    카테고리추가텍스트 category-input-text
+                    카테고리추가버튼 category-add-button
+                카테고리리스트본문영역 category-content-section
+                    카테고리리스트타이틀 category-title-list
+                    카테고리삭제버튼 category-delete-button
+        리스트 list
+            리스트추가영역 list-add-section 
+                리스트추가텍스트 list-input-text
+                리스트추가버튼 list-add-button
+            리스트본문영역 list-content-section
+                리스트타이틀 list-title
+                리스트삭제버튼 list-delete-button -->
 
-<!-- 각 html파일의 body크기조절 (모바일상황에선 키보드레이아웃이 올라오는것까지 생각해야함) -->
-
-    <section><!--big-size-->
-        <article>
-            <div>
-                <span id="category-title"></span>
-                <span id="button-category-list">
-                    <div id="category-list-modal">
-                        <div id="add-category">
-                            <span id="add-category-text"></span>
-                            <span id="add-button-category"></span>
-                        </div>
-                        <div id="category-list"></div>
-                    </div>
-                </span>
-                
-            </div>
-            <div id="add-list"> <!--add-list : 애매한거같음-->
-                <span id="add-list-text"></span>
-                <span id="add-button-list"></span>
-            </div>
-            <div id="video-list"></div>
-        </article>
-    
-        <!-- 각 리스트에 대한 내용은 모달창으로 생성 (=리스트를 생성할때마다 모달창도 각각만들고 display는 none으로 지정, 리스트를 누르면 display를 변경해서 보이도록)-->
-        <article><!--big-size-->
-            <div id="video-area">
-                <span id="please-input-URL-Address"></span>
-                <span id="add-button-video">
-                    <div id="add-video-modal">
-                        <span id="add-URL-text"></span>
-                        <span id="input-button-video"></span>
-                    </div>
-                </span>
-            </div>
-            <div id="note-area">
-                <span id="button-note-editor">
-                    <div id="note-editor-modal">
-                        <span id="button-bold"></span>
-                        <span id="button-italic"></span>
-                        <span id="button-color"><!--모달--></span>
-                        <span id="button-underline"></span>
-                        <span id="button-strikethrough"></span>
-                        <span id="font-size"><!--모달--></span>
-                        <span id="up-font-size"></span>
-                        <span id="down-font-size"></span>
-                    </div>
-                </span>
-                <span id="note"></span>
-            </div>
-        </article>
-    </section>
-    <footer>
+    <!-- <body class="list-layout"> -->
+    <section class="section list-section" id="">
+        <section class="category">
+            <article class="category-title-section">
+                <span class="category-title">카테고리타이틀</span>
+                <button class="category-dropdown">⬇︎</button>
+            </article>
+            <article class="category-modal-section">
+                <div class="category-add-section">
+                    <input type="text"  class="category-input-text" name="" >
+                    <button type="button"  class="category-add-button">+</button>
+                </div>
+                <ul class="category-content-section">
+                    <li class="category-list">
+                        <span class="category-title-list"></span>
+                        <button type="button" class="category-delete-button">-</button>
+                    </li>
+                </ul>
+            </article>
+        </section>
         
-    </footer>
+        <section class="content-section">
+            <div class="content-add-section">
+                <input type="text" class="list-input-text" name="" >
+                <button type="button" class="list-add-button">+</button>
+            </div>
+            <ul class="list-ul-section">
+                <li class="list">
+                    <button type="button" class="list-sortable-button">|</button>
+                    <span class="list-title">리스트타이틀123123</span>
+                    <button type="button" class="list-delete-button">-</button>
+                </li>
+            </ul>
+        </section>
+    </section>
 </body>
 </html>

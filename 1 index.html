@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlassNote</title>
 
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/public/style.css" />
     <script src="https://kit.fontawesome.com/65f55f4509.js" crossorigin="anonymous"></script>
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script defer src="main.js"></script>
+    <script defer src="/public/main.js"></script>
 </head>
 <body class="login-body">
     <header>
@@ -17,17 +17,16 @@
         <div id="includeHeader"></div>
     </header>
 
-    <section class="section" id="login-section"><!--small-size-->
-        <h1 class="title" id="login-title">Glass Note</h1>
+    <section class="section login-section"><!--small-size-->
+        <h1 class="title">Glass Note</h1>
         <form class="form" action="">
-            <input type="email" class="form-input" id="login-id" placeholder="ID">
-            <input type="password" class="form-input" id="login-password" placeholder="Password">
-            <button type="submit" class="form-button" id="login-submit"> log in</button><br>
-            <button type="button" class="form-button" id="login-home"> home</button>
-            <button type="button" class="form-button" id="login-signup"> signup</button>
-            <button type="button" class="form-button" id="what-is-glass-note"> What is Glass Note ?</button>
+            <input type="email" class="form-input login-id" placeholder="ID">
+            <input type="password" class="form-input login-password" placeholder="Password">
+            <button type="submit" class="form-button login-submit"> log in</button>
         </form>
-
+        <a href="/login" class="form-button login-home"> home</a>
+        <a href="/signup" class="form-button login-signup"> signup</a>
+        <a href="https://github.com/coqoa" target='_blank' class="form-button what-is-glass-note"> What is Glass Note ?</a>
     </section>
     <footer>
         

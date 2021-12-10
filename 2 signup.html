@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlassNote</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/public/style.css" />
     <script src="https://kit.fontawesome.com/65f55f4509.js" crossorigin="anonymous"></script>
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script defer src="main.js"></script>
+    <script defer src="/public/main.js"></script>
 </head>
 <body class="signup-body">
     <header>
@@ -16,21 +16,19 @@
         <div id="includeHeader"></div>
     </header>
 
-    <section class="section" id="signup-section"><!--big-size-->
-        <h1 class="title" id="signup-title">Sign Up</h1>
+    <section class="section signup-section"><!--big-size-->
+        <h1 class="title">Sign Up</h1>
         <form class="signup-form" action="">
-            <input type="text" class="form-input" id="signup-id" placeholder="ID">
-            <input type="password" class="form-input" id="signup-password" placeholder="Password">
-            <input type="password" class="form-input" id="signup-password-check" placeholder="Password-repeat">
-            <input type="email" class="form-input" id="signup-email" placeholder="email">
-            <input type="text" class="form-input" id="signup-phone-number" placeholder="number">
-            <input type="text" class="form-input" id="signup-birthday" placeholder="birthday">
-            <div>
-                <button type="button" class="form-button" id="signup-submit">Sign up</button>
-                <button type="button" class="form-button" id="signup-home"> home</button>
-                <button type="button" class="form-button" id="signup-login"> login</button>
-            </div>
+            <input type="text" class="form-input signup-id" placeholder="ID">
+            <input type="password" class="form-input signup-password" placeholder="Password">
+            <input type="password" class="form-input signup-password-check" placeholder="Password-repeat">
+            <input type="email" class="form-input signup-email" placeholder="email">
+            <input type="text" class="form-input signup-phone-number" placeholder="number">
+            <input type="text" class="form-input signup-birthday" placeholder="birthday">
+            <button type="button" class="form-button signup-submit">Sign up</button>
         </form>
+        <a href="/home" class="form-button signup-home"> home</a>
+        <a href="/login" class="form-button signup-login"> login</a>
     </section>    
     <footer>
         
